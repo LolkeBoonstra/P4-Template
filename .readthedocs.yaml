@@ -1,0 +1,16 @@
+on: 1
+
+build:
+  os: "redhat-7.9"
+  tools:
+    python: "3.6"
+
+# Build from the docs/ directory with Sphinx
+sphinx:
+  configuration: docs/conf.py
+
+# Explicitly set the version of Python and its requirements
+python:
+  install:
+    - requirements: docs/requirements.txt
+
